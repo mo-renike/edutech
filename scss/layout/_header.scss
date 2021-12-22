@@ -1,0 +1,41 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 3em;
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+
+  &.sticky {
+    transition: all 1.4s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $background-color;
+    z-index: 10;
+    padding: 0;
+    box-shadow: 2px 2px black;
+
+  }
+
+}
+
+nav {
+  background-color: $background-color2;
+
+  .logo {
+    width: 75px;
+  }
+
+  .navbar-nav {
+    margin: auto;
+
+    >* {
+      margin: 6px;
+      padding: 0 10px;
+    }
+  }
+
+}

@@ -1,0 +1,75 @@
+.intro {
+    padding: 2rem;
+
+    &__items {
+        padding: 2rem;
+        display: grid;
+
+
+        //   grid-auto-rows: minmax(100px, auto);
+        @include respond(large) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.5em;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        width: max-content;
+        margin: auto;
+        flex-direction: column;
+
+
+        .stroke {
+            width: 58px;
+            margin-left: auto;
+        }
+    }
+
+    h4 {
+        color: $dark-blue;
+        margin: 1em 0;
+    }
+
+}
+
+.features {
+    padding: 2em;
+
+
+    &__feature {
+        display: flex;
+        margin: 4em auto;
+        padding: 1em;
+        @include respond(medium) {
+            margin: 1em;
+          }
+
+        img {
+            width: 45%;
+            // height: 358.54px;
+            object-fit: cover;
+
+            @include respond(medium) {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+
+        >* {
+            padding: 2em;
+          
+        }
+    }
+}

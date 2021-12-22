@@ -1,0 +1,14 @@
+nav {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav.sticky {
+  transition: all 0.8s ease;
+  position: fixed;
+  top: 0;
+}
+nav .logo {
+  font-family: "Comforter", cursive;
+  font-size: 3rem;
+}

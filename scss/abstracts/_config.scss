@@ -1,0 +1,60 @@
+$background-color :#ffffff;
+$background-color2 :#F4FAF8;
+$dark-blue: #003F88;
+$footer-bg: #00296B;
+$yellow: #FDC500;
+$hr-yellow: #FfC500;
+$border-radius: 10px;
+$border-radius-img: 41px 0px;
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3, h4 {
+  color: $dark-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+body {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+
+  @include respond(medium) {
+    font-size: 15px;
+  }
+
+  @include respond(small) {
+    font-size: 12px;
+  }
+}
+
+hr {
+  color: $hr-yellow;
+  &.none{
+    display: none;
+    
+    @include respond(medium) {
+     display: block;
+     opacity: .3;
+    }
+  }
+}
+
+.blue-text {
+  color: $dark-blue;
+}

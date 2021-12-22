@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edutech</title>
+    <!-- Framework CDNs -->
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body id="home">
+    <main>
+      <!-- navigation start -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/images/book-svgrepo-com 1.png"
+              class="img-fluid logo"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link hover"
+                  style="color: #003f88"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link hover dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Product Design</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Management</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Data Analyst</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cloud Administrator</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Digital Marketer</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Software Development</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="logins">
+              <a href="#" class="action-btn">Login</a>
+              <a href="#" class="pry-btn">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation end -->
+      <div class="hero">
+        <img
+          src="./assets/images/Group 27.png"
+          class="img-fluid hero__png1"
+          alt=""
+        />
+        <img
+          src="./assets/images/Group 28.png"
+          class="img-fluid hero__png2"
+          alt=""
+        />
+        <div class="hero__text col-lg-6 col-md-6 col-sm-12">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner p-4">
+              <div class="carousel-item active">
+                <h1>
+                  Building future Leaders, <span class="blue-text">Today</span>
+                </h1>
+                <br />
+                <p>
+                  We are focused on training the leaders of tomorrow today by
+                  providing access to all.
+                </p>
+                <br />
+                <a href="#" class="pry-btn">Register</a>
+              </div>
+              <div class="carousel-item">
+                <h1>
+                  <span class="blue-text">EduTech</span> for Today, for Tomorrow
+                </h1>
+                <br />
+                <p>
+                  Our community of mentors help you learn today while you
+                  prepare for the future by building you up.
+                </p>
+                <br />
+                <a href="#" class="pry-btn">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__slider col-lg-6 col-md-6 col-sm-12">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/images/man.png"
+                  class="d-block w-100"
+                  alt="image cannnot be displayed"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/woman.png"
+                  class="d-block w-100"
+                  alt="image cannnot  be displayed"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container intro">
+        <div class="intro__header">
+          <h3 class="text-center">What we offer</h3>
+          <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
+        </div>
+        <br />
+        <div class="intro__items">
+          <div class="intro__item">
+            <img src="./assets/images/Group 33.png" alt="" />
+            <h4>Virtual Learning</h4>
+            <p>We have mentors ready to go on this journey with you online.</p>
+          </div>
+          <div class="intro__item">
+            <img src="./assets/images/Group 34.png" alt="" />
+            <h4>Onsite Learning</h4>
+            <p>
+              We have onsite learning as well for those who prefers the
+              classroom experience.
+            </p>
+          </div>
+          <div class="intro__item">
+            <img src="./assets/images/Group 35.png" alt="" />
+            <h4>Onward Learning</h4>
+            <p>
+              Learning don’t stop, we have mentors who will come in when you
+              need them after the course.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="none" />
+      <div class="container features">
+        <div class="features__feature">
+          <img src="./assets/images/first.png" alt="" />
+          <div class="features__text">
+            <h4>Learn from the comfort of your home</h4>
+            <p>
+              We hope that our new online learning environment will make the
+              educational experience more accessible to students of all ages.
+              For example, today's youths are eager to update their knowledge
+              base, but the difficulty of commuting makes it hard for them to
+              attend courses. Now you can enjoy learning while resting on your
+              couch.
+            </p>
+          </div>
+        </div>
+        <div class="features__feature">
+          <img src="./assets/images/second.png" alt="" />
+          <div class="features__text">
+            <h4>Experience the onsite learning</h4>
+            <p>
+              We care about your learning experience. For those who prefer a
+              classroom environment, we have a fully interactive training
+              facility. For those who want hands-on experience, our mentors are
+              on standby to give you that great classroom experience. You have
+              an opportunity to learn from the best. It’s time to take action!
+            </p>
+          </div>
+        </div>
+        <div class="features__feature">
+          <img src="./assets/images/third.png" alt="" />
+          <div class="features__text">
+            <h4>Onward Learning</h4>
+            <p>
+              Edutech will provide you with a network of people who can help you
+              with your future projects. We give you access to muiltiple
+              projects when your training is done, with access to reach your
+              instructors to assist where you seem lost on a project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./javascripts/main.js"></script>
+  </body>
+</html>
