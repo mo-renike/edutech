@@ -1,11 +1,11 @@
 %btn {
     font-size: 1em;
     border-radius: $border-radius;
-    padding: .8em 1.6em;
+    padding: .6em 1.4em;
     width: 4em;
     margin: 5px;
     cursor: pointer;
-    transition: all .6s ease
+    transition: all .6s ease;
 }
 
 .pry-btn {
@@ -35,6 +35,7 @@ button {
 }
 
 a {
+    font-weight: bold;
     color: inherit;
     text-decoration: none;
     cursor: pointer;
