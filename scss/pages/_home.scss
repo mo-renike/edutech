@@ -1,8 +1,8 @@
 .intro {
-    padding: 2rem;
+    padding: 2em;
 
     &__items {
-        padding: 2rem;
+        padding: 2em;
         display: grid;
 
 
@@ -14,7 +14,7 @@
     }
 
     &__item {
-        padding: 1rem;
+        padding: 1em;
 
         img {
             width: 40px;
@@ -30,6 +30,7 @@
 
         .stroke {
             width: 58px;
+            margin-top: -10px;
             margin-left: auto;
         }
     }
@@ -49,12 +50,13 @@
         display: flex;
         margin: 4em auto;
         padding: 1em;
+
         @include respond(medium) {
             margin: 1em;
-          }
+        }
 
         img {
-            width: 45%;
+            width: 50%;
             // height: 358.54px;
             object-fit: cover;
 
@@ -69,7 +71,178 @@
 
         >* {
             padding: 1em;
-          
+        }
+    }
+}
+
+.courses {
+    background-color: $background-color2;
+
+    h3 {
+        margin-top: 2em;
+    }
+
+    &__wrapper {
+        padding: 3em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3em 2em;
+
+        @include respond(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2em;
+        }
+
+        @include respond(small) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+        }
+    }
+
+    &__course {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2em;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(119, 119, 119, 0.25);
+        border-radius: 10px;
+
+
+        >* {
+            margin: .7em 0;
+        }
+
+
+        a {
+            position: relative;
+            color: $dark-blue;
+            margin-top: auto;
+            width: max-content;
+
+            &:after {
+                content: '';
+                display: block;
+                margin: auto;
+                height: 2px;
+                width: 0px;
+                background: transparent;
+                transition: width .5s ease;
+            }
+
+            &:hover:after {
+                width: 100%;
+                background: $dark-blue
+            }
+        }
+    }
+
+
+
+}
+
+.payment {
+    &__arrow {
+        position: absolute;
+    }
+
+    &__wrapper {
+        padding: 3em;
+        position: relative;
+        height: 700px;
+    }
+
+    &__group {
+        position: absolute;
+
+        >* {
+            margin: 10px 0;
+        }
+
+        &:nth-child(1) {
+            left: 10%;
+        }
+
+        &:nth-child(2) {
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        &:nth-child(3) {
+            right: 10%;
+            bottom: 10%;
+        }
+
+        img {
+            width: 5em;
+
+        }
+    }
+}
+
+.testimonials {
+    background-color: $background-color2;
+    padding: 2em;
+
+    h3 {
+        @include respond(medium) {
+            font-size: 1.5em;
+        }
+    }
+
+    &__item {
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+
+        @include respond(medium) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        >* {
+            padding: .4em;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            // background-color: white;
+            // padding: .6em;
+            border: 10px solid #ffffff;
+            border-radius: 25px;
+        }
+    }
+
+    &__text {
+        width: 60%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include respond(medium) {
+            width: 100%;
+        }
+    }
+
+    .carousel-indicators {
+
+        // width: max-content;
+        // margin:  auto;
+        button {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #C4C4C4;
+
+            &.active {
+                background-color: $yellow;
+            }
         }
     }
 }

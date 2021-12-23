@@ -55,6 +55,9 @@ a.hover {
   
     &:hover:after {
       width: 100%;
-      background: $dark-blue
+      background: $yellow;
     }
+  }
+  #navbarDropdownMenuLink::after {
+    content: none;
   }

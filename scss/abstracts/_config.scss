@@ -4,6 +4,8 @@ $dark-blue: #003F88;
 $footer-bg: #00296B;
 $yellow: #FDC500;
 $hr-yellow: #FfC500;
+$green: #008826;
+$green-bg: #F4FAF8;
 $border-radius: 10px;
 $border-radius-img: 41px 0px;
 
@@ -17,7 +19,8 @@ h1 {
   font-size: 3em;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: $dark-blue;
 }
 
@@ -32,6 +35,7 @@ h5 {
 body {
   font-size: 18px;
   font-weight: lighter;
+  max-width: 100vw;
   font-family: 'Open Sans', sans-serif;
 
   @include respond(medium) {
@@ -45,16 +49,19 @@ body {
 
 hr {
   color: $hr-yellow;
-  &.none{
+
+  &.none {
     display: none;
-    
+
     @include respond(medium) {
-     display: block;
-     opacity: .3;
+      display: block;
+      opacity: .3;
     }
   }
 }
-
+ul{
+  list-style: none;
+}
 .blue-text {
   color: $dark-blue;
 }

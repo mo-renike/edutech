@@ -1,0 +1,102 @@
+.footer {
+    background-color: $footer-bg;
+    padding: 3em;
+    color: $background-color;
+    position: relative;
+    font-size: .9em;
+    overflow-x: hidden;
+    padding: 3em;
+
+    @include respond(small) {
+        padding: 1em;
+    }
+
+    &__wrapper {
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 25% 20% 20% 35%;
+        gap: 2em;
+
+        @include respond(medium) {
+            grid-template-columns: 50% 50%;
+        }
+
+        @include respond(small) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    &__item {
+        &:nth-child(1) {
+            margin: 3em 0;
+        }
+
+        h6 {
+            color: $yellow;
+        }
+
+        ul {
+            li {
+                a {
+                    transition: .3s ease;
+                    width: max-content;
+                    padding: 1em;
+                    color: $background-color;
+                    font-weight: lighter;
+
+                    &:hover {
+                        margin-left: 5px;
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    &__form {
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            transition: .5s ease;
+            &:nth-child(2){
+                &:hover{
+                    background-color: $yellow;
+                    color: $dark-blue;
+                }
+            }
+
+            &::placeholder {
+                opacity: .4;
+            }
+        }
+
+    }
+    &__base{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        >*{
+            padding: 1em;
+        }
+        .socials{
+            >*{
+                width: 18px;
+                margin: 0 .5em;
+                cursor: pointer;
+                transition: .3s ease;
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+        }
+        @include respond(medium) {
+            flex-direction: column;
+            width: 100%;
+          }
+    }
+
+}

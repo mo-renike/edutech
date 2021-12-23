@@ -69,7 +69,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link hover" href="#">About</a>
+                <a class="nav-link hover" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -80,30 +80,30 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Courses
+                  Courses <i class="fas fa-angle-down"></i>
                 </a>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">Product Design</a></li>
+                  <li><a class="dropdown-item" href="#courses">Product Design</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Product Management</a>
+                    <a class="dropdown-item" href="#courses">Product Management</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Data Analyst</a></li>
+                  <li><a class="dropdown-item" href="#courses">Data Analyst</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Cloud Administrator</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Digital Marketer</a>
+                    <a class="dropdown-item" href="#courses">Cloud Administrator</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Software Development</a>
+                    <a class="dropdown-item" href="#courses">Digital Marketer</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#courses">Software Development</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover" href="#">Contact</a>
+                <a class="nav-link hover" href="#contact">Contact</a>
               </li>
             </ul>
             <div class="logins">
@@ -114,7 +114,7 @@
         </div>
       </nav>
 
-      <!-- navigation end -->
+      <!-- hero start -->
       <div class="hero">
         <img
           src="./assets/images/Group 27.png"
@@ -126,67 +126,45 @@
           class="img-fluid hero__png2"
           alt=""
         />
-        <div class="hero__text col-lg-6 col-md-6 col-sm-12">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner p-4">
-              <div class="carousel-item active">
-                <h1>
-                  Building future Leaders, <span class="blue-text">Today</span>
-                </h1>
-                <br />
-                <p>
-                  We are focused on training the leaders of tomorrow today by
-                  providing access to all.
-                </p>
-                <br />
-                <a href="#" class="pry-btn">Register</a>
-              </div>
-              <div class="carousel-item">
-                <h1>
-                  <span class="blue-text">EduTech</span> for Today, for Tomorrow
-                </h1>
-                <br />
-                <p>
-                  Our community of mentors help you learn today while you
-                  prepare for the future by building you up.
-                </p>
-                <br />
-                <a href="#" class="pry-btn">Register</a>
-              </div>
+        <div class="hero__wrapper">
+          <div class="hero__item active">
+            <div class="hero__text">
+              <h1>
+                Building future Leaders, <span class="blue-text">Today</span>
+              </h1>
+              <br />
+              <p>
+                We are focused on training the leaders of tomorrow today by
+                providing access to all.
+              </p>
+              <br />
+              <a href="#" class="pry-btn">Register</a>
+            </div>
+            <div class="hero__img">
+              <img src="./assets/images/man.png" class="img-fluid" alt="" />
             </div>
           </div>
-        </div>
-        <div class="hero__slider col-lg-6 col-md-6 col-sm-12">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/images/man.png"
-                  class="d-block w-100"
-                  alt="image cannnot be displayed"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/images/woman.png"
-                  class="d-block w-100"
-                  alt="image cannnot  be displayed"
-                />
-              </div>
+          <div class="hero__item">
+            <div class="hero__text">
+              <h1>
+                <span class="blue-text">EduTech</span> for Today, for Tomorrow
+              </h1>
+              <br />
+              <p>
+                Our community of mentors help you learn today while you prepare
+                for the future by building you up.
+              </p>
+              <br />
+              <a href="#" class="pry-btn">Register</a>
+            </div>
+            <div class="hero__img">
+              <img src="./assets/images/woman.png" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container intro">
+      <!-- intro section -->
+      <div id="about" class="container intro">
         <div class="intro__header">
           <h3 class="text-center">What we offer</h3>
           <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
@@ -217,6 +195,7 @@
         </div>
       </div>
       <hr class="none" />
+      <!-- features section -->
       <div class="container features">
         <div class="features__feature">
           <img src="./assets/images/first.png" alt="" />
@@ -257,6 +236,272 @@
             </p>
           </div>
         </div>
+      </div>
+      <!-- courses section -->
+      <div id="courses" class="courses">
+        <div class="intro__header">
+          <h3 class="text-center">Our Courses</h3>
+          <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
+        </div>
+        <div class="courses__wrapper">
+          <div class="courses__course">
+            <h5>Product Design</h5>
+            <img src="./assets/images/Group 11.png" alt="" />
+            <p>
+              We are the only company in the world that offers an Instructor-led
+              and hands-on training model on tech product design. The courses
+              are designed for beginners who want to learn the basics of tech
+              product design, all the way to experienced designers who want to
+              become great product managers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="courses__course">
+            <h5>Product Management</h5>
+            <img src="./assets/images/Group 12.png" alt="" />
+            <p>
+              Edutech is a leading provider of experiential product management
+              learning solutions. We offer a range of services from educational
+              workshops, to in-house training and coaching, and even the
+              creation and launch of your product into the market.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="courses__course">
+            <h5>Data Analysis</h5>
+            <img src="./assets/images/Group 13.png" alt="" />
+            <p>
+              The Data Analyst Bootcamp course is a perfect course if you are
+              looking for a career in Data Analytics. This course helps you
+              accelerate your career into Data Analytics: Learn Structured Query
+              Language and Power BI for Data Analytics and Visualization and
+              Visualization.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="courses__course">
+            <h5>Cloud Administration</h5>
+            <img src="./assets/images/Group 14.png" alt="" />
+            <p>
+              The course starts with the basics of cloud computing and quickly
+              moves to cover advanced topics such as job scheduling, Windows
+              virtual machines, networking, monitoring and storage. Students
+              will use Azure services such as SQL Database, Mobile Service and
+              Redis Cache.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="courses__course">
+            <h5>Digital Marketing</h5>
+            <img src="./assets/images/Group 15.png" alt="" />
+            <p>
+              Digital marketing involves the promotion of products and services
+              through a variety of digital channels, using the internet and
+              mobile technology. Learn more about what this industry entails
+              through this article in our series on Marketing Careers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="courses__course">
+            <h5>Software Development</h5>
+            <img src="./assets/images/Group 16.png" alt="" />
+            <p>
+              Software developers are the creative minds behind software
+              programs, and they have the technical skills to build those
+              programs. Developers can work anywhere in the world, and many
+              people who have this job enjoy it so much that they never plan to
+              quit.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- payments section -->
+      <div class="payment">
+        <div class="intro__header py-2 my-5">
+          <h3 class="text-center">Flexible Payment Plan</h3>
+          <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
+        </div>
+        <div class="payment__wrapper">
+          <!-- <img src="./assets/images/Vector 8.png" class="payment__arrow" alt=""> -->
+          <!-- <img src="./assets/images/Vector 8.png"  class="payment__arrrow" alt=""> -->
+          <div class="payment__group">
+            <img src="./assets/images/Group 36.png" alt="" />
+            <h6 class="blue-text">First</h6>
+            <p>1st Installment upon registration</p>
+          </div>
+
+          <div class="payment__group">
+            <img src="./assets/images/Group 37.png" alt="" />
+            <h6 class="blue-text">Second</h6>
+            <p>2nd Installment middle of the course</p>
+          </div>
+
+          <div class="payment__group">
+            <img src="./assets/images/Group 38.png" alt="" />
+            <h6 class="blue-text">Third</h6>
+            <p>3rd installment before exam intake</p>
+          </div>
+        </div>
+      </div>
+      <!-- testimonials section -->
+      <div class="testimonials">
+        <div class="intro__header py-2 my-5">
+          <h3 class="text-center">Testimonials from our Students</h3>
+          <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonials__item">
+                <div class="testimonials__img">
+                  <img
+                    src="./assets/images/onyem.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonials__text">
+                  <h5 class="blue-text">Onyemowo</h5>
+                  <p>
+                    When I was young i always wanted to know how mobile apps and
+                    websites were designed, coming to EduTech showed me I can do
+                    it and it’s been a wonderful journey. I’m on the right path
+                    to a great career as a Product designer.
+                  </p>
+                  <small><i>Product designer</i></small>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./assets/images/mo.png" class="img-fluid" alt="" />
+                </div>
+                <div class="testimonials__text">
+                  <h5 class="blue-text">Morenike</h5>
+                  <p>
+                    This was the first time I had ever considered becoming a
+                    software developer. The course was not easy, but I learned
+                    how to learn and how to think like a software developer. I
+                    was given the tools to succeed in any job or career path I
+                    chose.
+                  </p>
+                  <small><i>Software Developer</i></small>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./assets/images/guy.png" class="img-fluid" alt="" />
+                </div>
+                <div class="testimonials__text">
+                  <h5 class="blue-text">Ebuka</h5>
+                  <p>
+                    I became a professional data analyst after completing my
+                    courses with EduTech and the journey has been amazing. I’m
+                    grateful that I can get in touch when I need directions to
+                    something I don’t know.
+                  </p>
+                  <small><i>Data Analyst</i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <img width="75px" src="./assets/images/footer-logo.png" alt="" />
+            <h6 style="color: #ffffff;">EduTech for Today, <br> for Tomorrow</h6>
+          </div>
+          <div class="footer__item">
+            <h6>EduTech</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link hover" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link hover" href="#">Contact</a>
+              </li>
+                <a  href="#" class="w-50 mx-0 action-btn">Login</a>
+                <a  href="#" class="w-50 mx-0 pry-btn">Register</a>
+            
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6>Courses</h6>
+            <ul class="navbar-nav">
+              <li><a class="nav-link hover" href="#">Product Design</a></li>
+              <li><a class="nav-link hover" href="#">Product Management</a></li>
+              <li><a class="nav-link hover" href="#">Data Analyst</a></li>
+              <li>
+                <a class="nav-link hover" href="#">Cloud Administrator</a>
+              </li>
+              <li><a class="nav-link hover" href="#">Digital Marketer</a></li>
+              <li>
+                <a class="nav-link hover" href="#">Software Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6>Resourses</h6>
+            <ul class="navbar-nav">
+              <li><a class="nav-link hover" href="#">Blog</a></li>
+              <li><a class="nav-link hover" href="#">FAQs</a></li>
+              </li>
+            </ul> <br>
+            <h6 style="color: #ffffff;">Be the first to hear from us</h6>
+            <form class="footer__form" action="#">
+              <input type="email" placeholder="Enter Your Email">
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </div> <br> <br> <hr> <br>
+        <div class="footer__base">
+         <p> © 2021 EduTech. All rights reserved. </p> 
+            <a class="hover" href="#">Terms & Conditions </a>
+            <a class="hover" href="#">Refund Policy</a>
+            <div class="socials">
+              <img class="icons" src="./assets/images/linkedin.png" alt="">
+              <img class="icons" src="./assets/images/instagram.png" alt="">
+              <img class="icons" src="./assets/images/twitter.png" alt="">
+              <img class="icons" src="./assets/images/facebook.png" alt="">
+            </div>
+        </div>
+       
       </div>
     </main>
 

@@ -1,79 +1,72 @@
 .hero {
-  padding: 4em;
-  display: flex;
-  position: relative;
   background-color: $background-color2;
+  padding: 2em 3em;
+  position: relative;
 
-  @include respond(medium) {
-    flex-direction: column;
-    padding: 10px;
+  &__wrapper {
+    margin: 2em auto;
   }
 
-  >* {
-    width: 50%;
-    margin-top: 2em;
+  &__item {
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2em;
+    display: none;
 
-    @include respond(medium) {
-      width: 100%;
+    @include respond(small) {
+      grid-template-columns: 100%;
       padding: 0;
-      margin: 0;
+
+    }
+
+    >* {
+      margin: auto;
+    }
+
+    &.active {
+      display: grid;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    z-index: 1;
+
+    @include respond(small) {
+      display: none;
+
     }
   }
 
   &__text {
-    margin: auto;
-
-    .carousel-inner {
-      width: 80%;
-      margin: auto;
-
-      @include respond(small) {
-        width: 100%;
-      }
-    }
+    padding: 2em;
+    height: fit-content;
 
     a {
-      margin-top: 2em;
-    }
-  }
-
-  &__png2 {
-    position: absolute;
-    width: 375px;
-    left: 46px;
-    // top: 579px;
-    bottom: 0;
-
-    @include respond(medium) {
-      display: none;
+      margin: 2em 0;
     }
   }
 
   &__png1 {
     position: absolute;
-    width: 375px;
-    right: 0;
-    top: 271.31px;
+    right: -20px;
+    bottom: 3em;
 
-    @include respond(medium) {
+    @include respond(small) {
       display: none;
+
     }
   }
 
-  &__slider {
+  &__png2 {
+    position: absolute;
+    left: -26px;
+    bottom: 0;
+
     @include respond(small) {
       display: none;
-    }
 
-    .carousel-inner {
-      padding: 3em;
-    }
-
-    img {
-      height: 403px;
-      width: 358px;
-      border-radius: $border-radius-img;
-      object-fit: cover;
     }
   }
 }
