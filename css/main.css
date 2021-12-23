@@ -522,6 +522,13 @@ nav.sticky {
   -webkit-box-shadow: 0px 2px 4px rgba(119, 119, 119, 0.25);
           box-shadow: 0px 2px 4px rgba(119, 119, 119, 0.25);
   border-radius: 10px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.courses__course:hover {
+  -webkit-box-shadow: 10px 8px 10px rgba(119, 119, 119, 0.25);
+          box-shadow: 10px 8px 10px rgba(119, 119, 119, 0.25);
 }
 
 .courses__course > * {

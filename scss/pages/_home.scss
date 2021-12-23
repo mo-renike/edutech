@@ -107,7 +107,11 @@
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(119, 119, 119, 0.25);
         border-radius: 10px;
+        transition: .3s ease;
 
+        &:hover {
+            box-shadow: 10px 8px 10px rgba(119, 119, 119, 0.25);
+        }
 
         >* {
             margin: .7em 0;
