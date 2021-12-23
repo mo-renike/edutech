@@ -14,8 +14,8 @@
     grid-gap: 2em;
     display: none;
 
-    @include respond(small) {
-      grid-template-columns: 100%;
+    @include respond(medium) {
+      grid-template-columns: 1fr;
       padding: 0;
 
     }
@@ -42,7 +42,7 @@
   &__text {
     padding: 2em;
     height: fit-content;
-
+ 
     a {
       margin: 2em 0;
     }

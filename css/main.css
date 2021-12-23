@@ -150,10 +150,10 @@ a.hover:hover:after {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 859px) {
   .hero__item {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     padding: 0;
   }
 }
