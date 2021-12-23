@@ -172,7 +172,7 @@ a.hover:hover:after {
   z-index: 1;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 859px) {
   .hero__img {
     display: none;
   }
@@ -195,7 +195,7 @@ a.hover:hover:after {
   bottom: 3em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 859px) {
   .hero__png1 {
     display: none;
   }
@@ -207,7 +207,7 @@ a.hover:hover:after {
   bottom: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 859px) {
   .hero__png2 {
     display: none;
   }
@@ -485,23 +485,20 @@ nav.sticky {
   padding: 3em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
   grid-gap: 3em 2em;
 }
 
 @media (max-width: 859px) {
   .courses__wrapper {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 860px) {
   .courses__wrapper {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
 }
@@ -606,6 +603,12 @@ nav.sticky {
 @media (max-width: 859px) {
   .testimonials h3 {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonials h3 {
+    font-size: 1em;
   }
 }
 

@@ -85,16 +85,14 @@
     &__wrapper {
         padding: 3em;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 3em 2em;
-
         @include respond(medium) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2em;
+            grid-template-columns: repeat(1, 1fr);
+       
         }
 
-        @include respond(small) {
-            grid-template-columns: repeat(1, 1fr);
+        @include respond(large) {
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
         }
     }
@@ -108,6 +106,7 @@
         box-shadow: 0px 2px 4px rgba(119, 119, 119, 0.25);
         border-radius: 10px;
         transition: .3s ease;
+        
 
         &:hover {
             box-shadow: 10px 8px 10px rgba(119, 119, 119, 0.25);
@@ -192,6 +191,9 @@
     h3 {
         @include respond(medium) {
             font-size: 1.5em;
+        }
+        @include respond(small) {
+            font-size: 1em;
         }
     }
 
