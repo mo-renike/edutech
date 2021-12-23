@@ -276,6 +276,7 @@ a.hover:hover:after {
 }
 
 .footer__form input {
+  background-color: #e5e5e5;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -646,6 +647,10 @@ nav.sticky {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.testimonials__text small {
+  opacity: .5;
 }
 
 @media (max-width: 859px) {

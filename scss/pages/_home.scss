@@ -225,6 +225,10 @@
         flex-direction: column;
         justify-content: space-evenly;
 
+        small {
+            opacity: .5;
+        }
+
         @include respond(medium) {
             width: 100%;
         }
