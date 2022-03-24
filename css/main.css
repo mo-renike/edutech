@@ -557,6 +557,22 @@ nav.sticky {
   background: #003F88;
 }
 
+.payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment img {
+  width: 100%;
+}
+
 .payment__arrow {
   position: absolute;
 }
@@ -679,4 +695,3 @@ nav.sticky {
 .testimonials .carousel-indicators button.active {
   background-color: #FDC500;
 }
-/*# sourceMappingURL=main.css.map */

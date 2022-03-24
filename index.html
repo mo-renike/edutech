@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edutech</title>
     <!-- Framework CDNs -->
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
     <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -126,8 +120,10 @@
           class="img-fluid hero__png2"
           alt=""
         />
-        <div class="hero__wrapper">
-          <div class="hero__item active">
+     
+            <div id="carouselExampleSlidesOnly" class="hero__wrapper carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item hero__item active">
             <div class="hero__text">
               <h1>
                 Building future Leaders, <span class="blue-text">Today</span>
@@ -144,7 +140,7 @@
               <img src="./assets/images/man.png" class="img-fluid" alt="" />
             </div>
           </div>
-          <div class="hero__item">
+          <div class="carousel-item hero__item">
             <div class="hero__text">
               <h1>
                 <span class="blue-text">EduTech</span> for Today, for Tomorrow
@@ -163,6 +159,10 @@
           </div>
         </div>
       </div>
+      </div>
+
+  
+
       <!-- intro section -->
       <div id="about" class="container intro">
         <div class="intro__header">
@@ -318,13 +318,14 @@
       </div>
       <!-- payments section -->
       <div class="payment">
-        <div class="intro__header py-2 my-5">
+        <img src="./assets/images/payment.svg" alt="" class="img-fluid">
+        <!-- <div class="intro__header py-2 my-5">
           <h3 class="text-center">Flexible Payment Plan</h3>
           <img src="./assets/images/Vector 6.png" class="stroke" alt="" />
-        </div>
-        <div class="payment__wrapper">
-          <!-- <img src="./assets/images/Vector 8.png" class="payment__arrow" alt=""> -->
-          <!-- <img src="./assets/images/Vector 8.png"  class="payment__arrrow" alt=""> -->
+        </div> -->
+        <!-- <div class="payment__wrapper">
+          <img src="./assets/images/Vector 8.png" class="payment__arrow" alt=""> 
+          <img src="./assets/images/Vector 8.png"  class="payment__arrrow" alt=""> 
           <div class="payment__group">
             <img src="./assets/images/Group 36.png" alt="" />
             <h6 class="blue-text">First</h6>
@@ -342,7 +343,7 @@
             <h6 class="blue-text">Third</h6>
             <p>3rd installment before exam intake</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- testimonials section -->
       <div class="testimonials">
